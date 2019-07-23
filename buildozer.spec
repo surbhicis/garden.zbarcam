@@ -1,7 +1,7 @@
 [app]
 
 # (str) Title of your application
-title = ZBarCam Demo
+title = forkqrcode
 
 # (str) Package name
 package.name = zbarcamdemo
@@ -38,11 +38,15 @@ version.filename = %(source.dir)s/version.py
 # comma seperated e.g. requirements = sqlite3,kivy
 requirements =
     android,
+	python2,
+	enum34,
+	pathlib,
+	sqlite3,
+	openssl,
     kivy==5fc5385,
     libiconv,
     libzbar,
     Pillow==5.2.0,
-    python3,
     pyzbar==0.1.8
 
 
@@ -74,7 +78,7 @@ orientation = portrait
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3
+osx.python_version = 2
 
 # Kivy version to use
 osx.kivy_version = 1.9.1
